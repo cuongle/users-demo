@@ -1,0 +1,5 @@
+<img [src]="user.picture.large" class="photo">
+<div class="name">{{ user.name.first }} {{ user.name.last }}</div>
+<div class="email">{{user.email}}</div>
+<i class="bi bi-gender-female gender" *ngIf="isFemale()"></i>
+<i class="bi bi-gender-male gender" *ngIf="!isFemale()"></i>

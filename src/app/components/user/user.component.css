@@ -1,0 +1,37 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.photo {
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: 600;
+  margin: 10px;
+}
+
+.email {
+  margin: 5px;
+}
+
+.gender {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.gender.bi-gender-male {
+  color: blue;
+}
+
+.gender.bi-gender-female {
+  color: blueviolet;
+}

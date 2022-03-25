@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: medium;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  box-sizing: border-box;
+  background-color: #f3f2ef;
+}
+
+*,
+*:focus,
+*:hover {
+  outline: none;
+  box-sizing: border-box;
+}
+
