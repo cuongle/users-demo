@@ -9,10 +9,9 @@ import { GlobalStore } from 'src/app/core/services/global-store';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
-  users$: Observable<User[]>;
+  @Input() users!: User[];
 
-  constructor(private store: GlobalStore) {
-    this.users$ = store.users$;
+  constructor() {
   }
 
   ngOnInit(): void {

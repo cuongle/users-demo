@@ -1,2 +1,2 @@
-<input type="text" class="search-box" placeholder="Search name">
+<input type="text" class="search-box" placeholder="Search name" [ngModel]="text" (ngModelChange)="onChanged($event)">
 <i class="bi bi-search"></i>

@@ -1,5 +1,5 @@
 <div class="nav">
-  <ud-search-box></ud-search-box>
+  <ud-search-box (searchChanged)="onSearchChanged($event)"></ud-search-box>
 </div>
 
-<ud-user-list></ud-user-list>
+<ud-user-list [users]="(users$ | async)!"></ud-user-list>
