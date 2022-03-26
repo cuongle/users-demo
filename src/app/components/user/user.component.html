@@ -1,5 +1,16 @@
 <img [src]="user.picture.large" class="photo">
-<div class="name">{{ user.name.first }} {{ user.name.last }}</div>
+
+<div style="display: flex">
+  <div class="name">{{ user.name.first }} {{ user.name.last }}</div>
+  <img
+    width="25px"
+    src="http://purecatamphetamine.github.io/country-flag-icons/3x2/{{user.nat}}.svg"/>
+</div>
+
 <div class="email">{{user.email}}</div>
+<div>{{user.cell}}</div>
 <i class="bi bi-gender-female gender" *ngIf="isFemale()"></i>
 <i class="bi bi-gender-male gender" *ngIf="!isFemale()"></i>
+
+
+

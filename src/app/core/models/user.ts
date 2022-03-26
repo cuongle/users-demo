@@ -10,6 +10,7 @@ export interface User {
   dob: Dob;
   nat: string;
   phone: string;
+  cell: string;
   picture: Picture;
 }
 
