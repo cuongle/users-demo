@@ -8,6 +8,7 @@ import { UserComponent } from './components/user/user.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import {UserStore} from "./core/services/user-store";
+import {UserService} from "./core/services/user.service";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import {UserStore} from "./core/services/user-store";
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserStore],
+  providers: [UserService, UserStore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
