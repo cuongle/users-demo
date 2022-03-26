@@ -1,3 +1,3 @@
-<ng-container *ngFor="let user of users">
+<ng-container *ngFor="let user of users$ | async">
   <ud-user [user]="user"></ud-user>
 </ng-container>
