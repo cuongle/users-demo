@@ -1,0 +1,23 @@
+:host {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  border-radius: 5px;
+  border: 1px solid #f3f2ef;
+  background: #f3f2ef;
+  height: 40px;
+  width: 600px;
+  font-size: 14px;
+  text-indent: 10px;
+  right: 40px;
+}
+
+.bi.bi-search {
+  position: absolute;
+  right: 15px;
+  font-size: 20px;
+  color: gray;
+}
