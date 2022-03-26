@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {User} from "../../core/models/user";
-import {UserStore} from "../../core/services/user-store";
+import {GlobalStore} from "../../core/services/user-store";
 import {Observable} from "rxjs";
 
 @Component({
@@ -11,8 +11,8 @@ import {Observable} from "rxjs";
 export class UserListComponent implements OnInit {
   users$: Observable<User[]>;
 
-  constructor(private userStore: UserStore) {
-    this.users$ = userStore.users$;
+  constructor(private store: GlobalStore) {
+    this.users$ = store.users$;
   }
 
   ngOnInit(): void {

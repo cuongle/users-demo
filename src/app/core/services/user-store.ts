@@ -3,7 +3,7 @@ import {BehaviorSubject} from "rxjs";
 import {User} from "../models/user";
 
 @Injectable()
-export class UserStore {
+export class GlobalStore {
   private usersSource = new BehaviorSubject<User[]>([]);
   users$ = this.usersSource.asObservable();
 

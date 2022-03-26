@@ -1,11 +1,11 @@
 ﻿import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {UserResponse} from "../models/user";
-import {UserStore} from "./user-store";
+import {GlobalStore} from "./user-store";
 
 @Injectable()
 export class UserService {
-  constructor(private http: HttpClient, private userStore: UserStore) {
+  constructor(private http: HttpClient, private store: GlobalStore) {
   }
 
   loadUsers(): void {
@@ -13,7 +13,7 @@ export class UserService {
 
     this.http.get<UserResponse>(userApi)
       .subscribe((response) => {
-        this.userStore.emitUsers(response.results);
+        this.store.emitUsers(response.results);
       });
   }
 }

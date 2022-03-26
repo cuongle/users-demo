@@ -7,7 +7,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { UserComponent } from './components/user/user.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
-import {UserStore} from "./core/services/user-store";
+import {GlobalStore, UserStore} from "./core/services/user-store";
 import {UserService} from "./core/services/user.service";
 
 @NgModule({
@@ -22,7 +22,7 @@ import {UserService} from "./core/services/user.service";
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserService, UserStore],
+  providers: [UserService, GlobalStore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
