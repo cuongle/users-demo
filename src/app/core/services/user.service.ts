@@ -9,7 +9,7 @@ export class UserService {
   }
 
   loadUsers(): void {
-    const userApi = 'https://randomuser.me/api/?results=50';
+    const userApi = 'https://randomuser.me/api/?results=100';
 
     this.http.get<UserResponse>(userApi)
       .subscribe((response) => {
