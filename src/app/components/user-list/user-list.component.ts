@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {User} from "../../core/models/user";
-import {GlobalStore} from "../../core/services/user-store";
 import {Observable} from "rxjs";
+import { GlobalStore } from 'src/app/core/services/global-store';
 
 @Component({
   selector: 'ud-user-list',

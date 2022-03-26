@@ -1,7 +1,7 @@
 ﻿import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {UserResponse} from "../models/user";
-import {GlobalStore} from "./user-store";
+import {GlobalStore} from "./global-store";
 
 @Injectable()
 export class UserService {

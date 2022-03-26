@@ -1,7 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {User, UserResponse} from './core/models/user';
-import {UserStore} from "./core/services/user-store";
 import {UserService} from "./core/services/user.service";
 
 @Component({
