@@ -30,6 +30,11 @@
   color: blueviolet;
 }
 
+.gender-box.toggle {
+  background: #f3f2ef;
+  font-weight: 600;
+}
+
 .vertical-line {
   height: 100%;
   width: 1px;

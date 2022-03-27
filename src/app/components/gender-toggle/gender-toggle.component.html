@@ -1,17 +1,17 @@
-<div class="gender-box">
+<div [class]=" status === undefined ? 'gender-box toggle' : 'gender-box'" (click)="toggleAll()">
   <span>All</span>
 </div>
 
 <div class="vertical-line"></div>
 
-<div class="gender-box">
+<div [class]=" status === 'male' ? 'gender-box toggle' : 'gender-box'" (click)="toggleMale()">
   <i class="bi bi-gender-male"></i>
   <span>Male</span>
 </div>
 
 <div class="vertical-line"></div>
 
-<div class="gender-box">
+<div [class]=" status === 'female' ? 'gender-box toggle' : 'gender-box'" (click)="toggleFemale()">
   <i class="bi bi-gender-female"></i>
   <span>Female</span>
 </div>
