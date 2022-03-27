@@ -1,28 +1,7 @@
 <div class="nav">
   <ud-search-box (searchChanged)="onSearchChanged($event)"></ud-search-box>
-
-
-  <div class="gender-toggle" style="margin-left: 10px">
-    <div class="gender-box">
-      <span>All</span>
-    </div>
-
-    <div class="vertical-line"></div>
-
-    <div class="gender-box">
-      <i class="bi bi-gender-male"></i>
-      <span>Male</span>
-    </div>
-
-    <div class="vertical-line"></div>
-
-    <div class="gender-box">
-      <i class="bi bi-gender-female"></i>
-      <span>Female</span>
-    </div>
-  </div>
+  <div class="margin-left-10"></div>
+  <ud-gender-toggle></ud-gender-toggle>
 </div>
-
-
 
 <ud-user-list [users]="(users$ | async)!"></ud-user-list>

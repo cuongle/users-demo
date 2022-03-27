@@ -9,13 +9,15 @@ import {UserListComponent} from './components/user-list/user-list.component';
 import {SearchBoxComponent} from './components/search-box/search-box.component';
 import {UserService} from "./core/services/user.service";
 import {GlobalStore} from "./core/services/global-store";
+import { GenderToggleComponent } from './components/gender-toggle/gender-toggle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     UserListComponent,
-    SearchBoxComponent
+    SearchBoxComponent,
+    GenderToggleComponent
   ],
   imports: [
     BrowserModule,
