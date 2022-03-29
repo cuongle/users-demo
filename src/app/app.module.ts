@@ -10,6 +10,8 @@ import {SearchBoxComponent} from './components/search-box/search-box.component';
 import {UserService} from "./core/services/user.service";
 import {GlobalStore} from "./core/services/global-store";
 import { GenderToggleComponent } from './components/gender-toggle/gender-toggle.component';
+import { UserDetailListComponent } from './components/user-detail-list/user-detail-list.component';
+import { ViewSwitchComponent } from './components/view-switch/view-switch.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { GenderToggleComponent } from './components/gender-toggle/gender-toggle.
     UserComponent,
     UserListComponent,
     SearchBoxComponent,
-    GenderToggleComponent
+    GenderToggleComponent,
+    UserDetailListComponent,
+    ViewSwitchComponent
   ],
   imports: [
     BrowserModule,

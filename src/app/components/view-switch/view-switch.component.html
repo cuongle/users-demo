@@ -1,0 +1,11 @@
+<div [class]=" isList ? 'view-box' : 'view-box selected'" (click)="toggle()">
+  <i class="bi bi-grid"></i>
+  <span>Grid</span>
+</div>
+
+<div class="vertical-line"></div>
+
+<div [class]=" isList ? 'view-box selected' : 'view-box'" (click)="toggle()">
+  <i class="bi bi-list"></i>
+  <span>List</span>
+</div>

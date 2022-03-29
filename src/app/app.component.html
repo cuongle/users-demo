@@ -2,6 +2,11 @@
   <ud-search-box (searchChanged)="onSearchChanged($event)"></ud-search-box>
   <div class="margin-left-10"></div>
   <ud-gender-toggle (change)="onGenderChanged($event)"></ud-gender-toggle>
+
+  <div class="flex-grow-1"></div>
+
+  <ud-view-switch [isList]="isList" (change)="onViewChanged($event)"></ud-view-switch>
 </div>
 
-<ud-user-list [users]="(users$ | async)!"></ud-user-list>
+<ud-user-list [users]="(users$ | async)!" *ngIf="!isList"></ud-user-list>
+<ud-user-detail-list [users]="(users$ | async)!" *ngIf="isList"></ud-user-detail-list>

@@ -1,13 +1,13 @@
 :host {
   display: inline-flex;
   height: 40px;
+  align-items: center;
   border: 1px solid lightgray;
   border-radius: 5px;
-  align-items: center;
   font-size: 14px;
 }
 
-.gender-box {
+.view-box {
   display: inline-flex;
   align-items: center;
   padding: 10px;
@@ -15,25 +15,21 @@
   border: 0;
 }
 
-.gender-box:hover {
+.view-box:hover {
   background: #f3f2ef;
 }
 
-.gender-box > span {
+.view-box.selected {
+  background: #f3f2ef;
+}
+
+
+.view-box > span {
   margin-left: 5px;
 }
 
-.gender-box > .bi-gender-male {
-  color: blue;
-}
-
-.gender-box > .bi-gender-female {
-  color: blueviolet;
-}
-
-.gender-box.toggle {
-  background: #f3f2ef;
-  font-weight: 600;
+.view-box > i {
+  font-size: 16px;
 }
 
 .vertical-line {

@@ -12,6 +12,7 @@ import {GlobalStore} from "./core/services/global-store";
 export class AppComponent implements OnInit, OnDestroy {
   title = 'users-demo';
   users$!: Observable<User[]>;
+  isList: boolean = false;
 
   constructor(private userService: UserService, private globalStore: GlobalStore) {
     this.userService.loadUsers();
@@ -54,7 +55,10 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   onGenderChanged($event: any) {
-    console.log($event);
     this.globalStore.emitGender($event);
+  }
+
+  onViewChanged($event: boolean) {
+    this.isList = $event;
   }
 }

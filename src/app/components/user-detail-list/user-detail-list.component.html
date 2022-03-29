@@ -1,0 +1,27 @@
+<div></div>
+<div class="header">First Name</div>
+<div class="header">Last Name</div>
+<div class="header">Nationality</div>
+<div class="header">Date Of Birth</div>
+<div class="header">Gender</div>
+<div class="header">Email</div>
+<div class="header">Mobile</div>
+
+<ng-container *ngFor="let user of users">
+  <img [src]="user.picture.thumbnail" class="photo">
+
+
+  <div>{{ user.name.first }}</div>
+  <div>{{ user.name.last }}</div>
+
+  <img
+    width="25px"
+    src="http://purecatamphetamine.github.io/country-flag-icons/3x2/{{user.nat}}.svg"/>
+
+  <div> {{ user.dob.date | date }} </div>
+
+  <i class="bi bi-gender-female gender" *ngIf="isFemale(user)"></i>
+  <i class="bi bi-gender-male gender" *ngIf="!isFemale(user)"></i>
+  <div>{{ user.email }}</div>
+  <div>{{ user.cell }}</div>
+</ng-container>
