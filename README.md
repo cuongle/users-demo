@@ -14,3 +14,8 @@ This project is to demo using Angular to build the UI for public API: https://ra
 - The UI is built base on Vanilla CSS (No CSS framework)
 
 
+## screenshot:
+
+
+![Alt text](screenshot.png?raw=true)
+
