@@ -1,18 +1,16 @@
 # Users Management
 
-This project is to demo use to angular to manage users.
+This project is to demo using Angular to build the UI for public API: https://randomuser.me 
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Run `npm install` after code clone to install npm packages.
+- Run `ng serve`. The application will run on `http://localhost:4200/`.
 
 
-## Build
+## Notes:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Only use package bootstrap-icons.
+- The UI is built base on Vanilla CSS (No CSS framework)
 
 
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
