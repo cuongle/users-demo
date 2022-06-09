@@ -105,5 +105,7 @@
       }
     }
   },
-  "defaultProject": "users-demo"
+  "cli": {
+    "analytics": false
+  }
 }
