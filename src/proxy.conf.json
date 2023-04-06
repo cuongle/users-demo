@@ -1,4 +1,4 @@
-﻿{
+{
   "/api": {
     "target": "https://randomuser.me/api/",
     "secure": false
